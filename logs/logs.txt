@@ -1,0 +1,10 @@
+51924. 31/08/23 14:19:58 socket_events yes /home/sp00ky/Documents/Projects/test 1000 969526
+51925. 31/08/23 14:19:58 read_event yes /home/sp00ky/Documents/Projects/test 1000 969527
+52768. 31/08/23 14:28:13 socket_events yes /home/sp00ky/Documents/Projects/test 1000 970454
+52769. 31/08/23 14:28:13 read_event yes /home/sp00ky/Documents/Projects/test 1000 970455
+52770. 31/08/23 14:28:13 write_event yes /home/sp00ky/Documents/Projects/test 1000 970456
+52771. 31/08/23 14:28:13 write_event yes /home/sp00ky/Documents/Projects/test 1000 970457
+53241. 31/08/23 14:33:15 socket_events yes /home/sp00ky/Documents/Projects/test 1000 971012
+53242. 31/08/23 14:33:15 read_event yes /home/sp00ky/Documents/Projects/test 1000 971013
+53243. 31/08/23 14:33:15 write_event yes /home/sp00ky/Documents/Projects/test 1000 971014
+53244. 31/08/23 14:33:15 write_event yes /home/sp00ky/Documents/Projects/test 1000 971015
