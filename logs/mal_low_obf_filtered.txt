@@ -1,0 +1,6 @@
+1. 09/03/23 18:10:56 persistence_event yes /morello/shared_folder/mal_low_obf 0 528
+19. 09/03/23 18:11:06 socket_event yes /morello/shared_folder/mal_low_obf 0 592
+20. 09/03/23 18:11:11 read_event yes /morello/shared_folder/mal_low_obf 0 593
+21. 09/03/23 18:11:11 write_event yes /morello/shared_folder/mal_low_obf 0 594
+22. 09/03/23 18:11:11 write_event yes /morello/shared_folder/mal_low_obf 0 595
+23. 09/03/23 18:11:11 write_event yes /morello/shared_folder/mal_low_obf 0 596

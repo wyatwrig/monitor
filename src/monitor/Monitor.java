@@ -24,13 +24,14 @@ public class Monitor {
 	public static void main(String[] args) {
 		String s = System.getProperty("user.dir") + "/logs"; // getting path to logs folder
 		QueueSource queue = new QueueSource().loop(false);
-		
+		int count = 0;
 		try { // attempting to open logs file
-			BufferedReader rdr = new BufferedReader(new FileReader(s + "/test.txt")); // create bufferedreader to read each line
+			BufferedReader rdr = new BufferedReader(new FileReader(s + "/nonmal_no_obf_filtered.txt")); // create bufferedreader to read each line
 			String line = rdr.readLine();
 			while (line != null){ // while not eof
 				queue.addEvent(line); // add line as event to queuesource.
 				line = rdr.readLine();
+				count++;
 			}
 			System.out.println("[*] Done reading in logs file");
 			rdr.close();
@@ -115,17 +116,11 @@ public class Monitor {
 		
 		System.out.println("[*] Evaluating monitor results: ");
 		Pullable verdict = moore.getPullableOutput();
-		NextStatus status = verdict.hasNextSoft(); // hasnext sometimes doesn't return true, even though there are events to process
-		Boolean exit = false; // note that this will never exit since it's forcing to process. Not sure why, but couldn't get it to work otherwise
-		while (!exit) {
-			if (status != NextStatus.NO) {
-				// until hasNext = true
-				Object vrd = verdict.pullSoft();
-				if (vrd != null) {
-					System.out.println("[*] Monitor Output: " + vrd);
-				}
-				UtilityMethods.pause(1000); // wait for prior operations to complete
-				}
+		for (int i = 0; i < count+1; i++) {
+			Object vrd = verdict.pullSoft();
+			if (vrd != null) {
+				System.out.println("[*] Monitor Output: " + vrd);
+			}
 		}
 		
 		System.out.println("[*] Monitor Finished ");

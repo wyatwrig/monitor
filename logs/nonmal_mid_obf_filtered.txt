@@ -1,0 +1,4 @@
+6. 09/03/23 18:12:32 socket_event yes /morello/shared_folder/nonmal_mid_obf 0 617
+7. 09/03/23 18:12:42 read_event yes /morello/shared_folder/nonmal_mid_obf 0 618
+8. 09/03/23 18:12:52 write_event yes /morello/shared_folder/nonmal_mid_obf 0 619
+9. 09/03/23 18:13:02 write_event yes /morello/shared_folder/nonmal_mid_obf 0 620
